@@ -1,0 +1,16 @@
+@import './reset/_reset.scss';
+
+html {
+	body {
+		@import './containers/_containers.scss';
+	}
+
+	@media screen and (max-width: 1000px) {
+		font-size: .6rem;
+	}
+}
+
+.mwc {
+	width: 100%;
+	max-width: 1100px;
+}

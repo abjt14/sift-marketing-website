@@ -1,0 +1,10 @@
+@import './_header.scss';
+@import './main.scss';
+@import './team';
+@import './promotional.scss';
+@import './contact.scss';
+@import './footer.scss';
+
+& > * > .mwc {
+	margin: 0 auto;
+}

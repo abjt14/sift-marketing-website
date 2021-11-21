@@ -1,0 +1,163 @@
+#contactus {
+	text-align: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 6.4rem;
+	display: flex;
+	gap: 5rem;
+
+	@media screen and (max-width: 600px) {
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.mobile-titles {
+		display: none;
+
+		@media screen and (max-width: 600px) {
+			display: block;
+			order: -2;
+		}
+
+		.title {
+			font-weight: bold;
+			font-size: 3.52rem;
+			line-height: 4.22rem;
+			letter-spacing: 0.02em;
+			color: #134075;
+			margin-bottom: .7rem;
+			text-align: left;
+		}
+
+		.sub-title {
+			font-weight: normal;
+			font-size: 1.4rem;
+			line-height: 1.7rem;
+			letter-spacing: 0.02em;
+			color: #000000;
+			text-align: left;
+		}
+	}
+
+	.content {
+		flex: 5;
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+
+		.title {
+			font-weight: bold;
+			font-size: 3.52rem;
+			line-height: 4.22rem;
+			letter-spacing: 0.02em;
+			color: #134075;
+			margin-bottom: .7rem;
+
+			@media screen and (max-width: 600px) {
+				display: none;
+			}
+		}
+
+		.sub-title {
+			font-weight: normal;
+			font-size: 1.4rem;
+			line-height: 1.7rem;
+			letter-spacing: 0.02em;
+			color: #000000;
+			margin-bottom: 3.8rem;
+
+			@media screen and (max-width: 600px) {
+				display: none;
+			}
+		}
+
+		.form {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			.clue {
+				font-weight: bold;
+				font-size: 1.12rem;
+				letter-spacing: 0.02em;
+				color: #000000;
+				margin-bottom: 1.27rem;
+
+				span {
+					color: red;
+				}
+			}
+
+			.field {
+				display: flex;
+				flex-direction: column;
+				gap: .7rem;
+
+				label {
+					font-weight: 500;
+					font-size: 1.27rem;
+					text-transform: capitalize;
+					color: #000000;
+
+					span {
+						color: red;
+					}
+				}
+
+				input, textarea {
+					background: #E0E0E0;
+					border-radius: 5px;
+					padding: 1.165rem;
+					font-size: 1.27rem;
+				}
+
+				textarea {
+					resize: vertical;
+					min-height: 3.6rem;
+				}
+
+				&:not(:last-child) {
+					margin-bottom: 1.12rem;
+				}
+			}
+
+			button {
+				font-size: 1.3rem;
+				font-weight: 600;
+				padding: 1.5rem 4.25rem;
+				background: #164989;
+				border-radius: .7rem;
+				color: #fff;
+				text-transform: capitalize;
+				margin-top: 2rem;
+			}
+		}
+	}
+
+	.image-text {
+		flex: 4;
+		background: url('../assets/images/contact/contact-bg.png');
+		background-size: cover;
+		display: flex;
+    align-items: flex-end;
+
+		.text {
+			font-weight: bold;
+			font-size: 64px;
+			line-height: 75px;
+			color: #FFFFFF;
+			text-align: left;
+			padding: 2.32rem;
+			max-width: 80%;
+		}
+
+		@media screen and (max-width: 600px) {
+			order: -1;
+		}
+	}
+
+	@media screen and (max-width: 1000px) {
+		padding: 3.2rem;
+	}
+}

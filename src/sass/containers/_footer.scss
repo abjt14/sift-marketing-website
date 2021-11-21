@@ -1,0 +1,22 @@
+footer {
+	display: grid;
+	background: #134075;
+	justify-content: center;
+	gap: 0.25rem;
+	padding: 0.5rem 0;
+	text-align: center;
+
+	.url-cont {
+		font-weight: 500;
+		font-size: 1.5rem;
+		line-height: 2.1rem;
+		color: #FFFFFF;
+	}
+
+	.copyright-text {
+		font-weight: 500;
+    font-size: .9rem;
+    line-height: 1.2rem;
+    color: #FFFFFF;
+	}
+}

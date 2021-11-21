@@ -1,0 +1,43 @@
+#promotional-cont {
+	text-align: center;
+	max-width: 1200px;
+	margin: 6.9rem auto 1.77rem auto;
+
+	.title {
+		margin-bottom: 3.45rem;
+		font-weight: bold;
+		font-size: 3.52rem;
+		line-height: 4.22rem;
+		text-align: center;
+		letter-spacing: 0.02em;
+		color: #134075;
+	}
+
+	.video {
+		background: #868686;
+    border: 1px solid #E7EAF8;
+    padding: 6.34rem;
+		border-radius: 2.11rem;
+
+		iframe {
+			width: 100%;
+			max-width: 1200px;
+			max-height: 675px;
+			height: 675px;
+			background: #FFFFFF;
+			border: .7rem solid #C0C0C0;
+			box-sizing: border-box;
+			border-radius: 2.11rem;
+
+			@media screen and (max-width: 600px) {
+				max-height: 375px;
+				height: auto;
+			}
+		}
+
+		@media screen and (max-width: 1000px) {
+			padding: 1.8rem;
+			border-radius: 0;
+		}
+	}
+}
