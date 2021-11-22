@@ -1,8 +1,8 @@
 #contactus {
 	text-align: center;
-	max-width: 1200px;
+	max-width: calc(1200px + 18rem);
 	margin: 0 auto;
-	padding: 6.4rem 0;
+	padding: 6.4rem 9rem;
 	display: flex;
 	gap: 5rem;
 
@@ -113,7 +113,7 @@
 				}
 
 				textarea {
-					resize: vertical;
+					resize: none;
 					min-height: 3.6rem;
 				}
 
