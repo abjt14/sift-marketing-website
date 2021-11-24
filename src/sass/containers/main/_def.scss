@@ -26,16 +26,8 @@
 			flex: 1;
 			text-align: center;
 
-			@media screen and (max-width: 1000px) {
-				svg {
-					max-width: 25rem;
-				}
-			}
-
-			@media screen and (max-width: 600px) {
-				svg {
-					max-width: 15rem;
-				}
+			img {
+				width: 25rem;
 			}
 		}
 
