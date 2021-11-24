@@ -4,6 +4,7 @@ const formInit = () => {
 
   form.addEventListener('submit', e => {
     e.preventDefault()
+		document.querySelector('#form-submit').innerText = 'Submitting...'
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => formSuccessAction())
       .catch(error => console.error('Error!', error.message))
@@ -15,6 +16,7 @@ const formInit = () => {
 }
 
 const formSuccessAction = () => {
+	document.querySelector('#form-submit').innerText = 'Submit'
 	const successCont = document.querySelector('#form-success-cont')
 	successCont.classList.toggle('display-none')
 }
