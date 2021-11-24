@@ -21,6 +21,7 @@
 
 			@media screen and (max-width: 600px) {
 				text-align: left;
+				font-size: 4rem;
 			}
 		}
 
@@ -33,6 +34,7 @@
 
 			@media screen and (max-width: 600px) {
 				text-align: left;
+				font-size: 1.65rem;
 			}
 		}
 
@@ -48,6 +50,7 @@
 
 			@media screen and (max-width: 600px) {
 				margin-bottom: 2rem;
+				font-size: 1.65rem;
 			}
 		}
 
@@ -71,6 +74,10 @@
 			line-height: 2.25rem;
 			text-align: center;
 			color: #03277D;
+
+			@media screen and (max-width: 600px) {
+				font-size: 1.65rem;
+			}
 		}
 	}
 

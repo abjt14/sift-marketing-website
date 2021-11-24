@@ -10,14 +10,15 @@ header {
 		justify-content: space-between;
 	}
 
-	#logo-cont {
+	.logo-cont {
 		flex: 1;
 
-		#img-cont {
+		.img-cont {
 			display: flex;
 			justify-content: flex-start;
 			align-items: center;
 			padding: 1rem 0 .5rem 0;
+			cursor: pointer;
 		}
 	}
 
@@ -89,10 +90,10 @@ header {
 	background-color: #fff;
 	z-index: 1;
 
-	#logo-cont {
+	.logo-cont {
 		flex: 1;
 
-		#img-cont {
+		.img-cont {
 			display: flex;
 			justify-content: flex-start;
 			align-items: center;

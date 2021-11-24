@@ -3,6 +3,10 @@
 	max-width: 1200px;
 	margin: 6.9rem auto 1.77rem auto;
 
+	@media screen and (max-width: 600px) {
+		margin: 6.4rem auto 1.6rem auto
+	}
+
 	.title {
 		margin-bottom: 3.45rem;
 		font-weight: bold;
@@ -11,6 +15,10 @@
 		text-align: center;
 		letter-spacing: 0.02em;
 		color: #134075;
+
+		@media screen and (max-width: 600px) {
+			font-size: 4rem;
+		}
 	}
 
 	.video {

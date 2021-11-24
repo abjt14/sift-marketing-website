@@ -11,6 +11,10 @@ footer {
 		font-size: 1.5rem;
 		line-height: 2.1rem;
 		color: #FFFFFF;
+
+		@media screen and (max-width: 600px) {
+			font-size: 1.7rem;
+		}
 	}
 
 	.copyright-text {
@@ -18,5 +22,13 @@ footer {
     font-size: .9rem;
     line-height: 1.2rem;
     color: #FFFFFF;
+
+		@media screen and (max-width: 600px) {
+			font-size: 1.4rem;
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		gap: .5rem;
 	}
 }

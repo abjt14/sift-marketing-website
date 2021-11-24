@@ -8,13 +8,21 @@
 		letter-spacing: 0.02em;
 		color: #134075;
 		text-align: center;
+
+		@media screen and (max-width: 600px) {
+			font-size: 4rem;
+		}
 	}
 
 	> .text {
-		font-size: 1.7rem;
+		font-size: 1.65rem;
 		line-height: 2.25rem;
 		color: #000000;
 		margin: 1rem 0 3.17rem 0;
+
+		@media screen and (max-width: 600px) {
+			font-size: 1.65rem;
+		}
 	}
 
 	> .content {
@@ -61,12 +69,20 @@
 					line-height: 3.02rem;
 					letter-spacing: 0.02em;
 					color: #164989;
+
+					@media screen and (max-width: 600px) {
+						font-size: 3rem;
+					}
 				}
 
 				> .text {
 					font-size: 1.4rem;
 					line-height: 2.25rem;
 					color: #000000;
+
+					@media screen and (max-width: 600px) {
+						font-size: 1.65rem;
+					}
 				}
 			}
 		}

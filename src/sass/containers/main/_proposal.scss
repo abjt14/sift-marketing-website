@@ -10,6 +10,10 @@
 		color: #164989;
 		margin-bottom: 3.24rem;
 		text-align: center;
+
+		@media screen and (max-width: 600px) {
+			font-size: 4rem;
+		}
 	}
 
 	.content {
@@ -36,6 +40,7 @@
 
 				@media screen and (max-width: 600px) {
 					margin-bottom: 2rem;
+					font-size: 1.65rem;
 				}
 			}
 
