@@ -78,7 +78,7 @@
 				<a href="#features">features</a>
 				<a href="#team">team</a>
 				<a href="#contactus">contact us</a>
-				<div id="underline-bar-nav" class=""></div>
+				<div id="underline-bar-nav" class="active"></div>
 			</div>
 		</div>
 		<div id="underline-bar"></div>
@@ -114,7 +114,7 @@
 				</svg>
 			</div>
 		</div>
-		<button id="mobile-menu-toggle" onclick="toggleMobileMenu()">
+		<button id="mobile-menu-toggle">
 			<svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<rect width="22" height="3" transform="matrix(1 0 0 -1 0 3)" fill="#134075"/>
 				<rect width="22" height="3" transform="matrix(1 0 0 -1 0 10)" fill="#134075"/>
@@ -122,16 +122,17 @@
 			</svg>
 		</button>
 		<div class="menu">
-			<a href="#features">features</a>
 			<a href="#about">about</a>
+			<a href="#features">features</a>
 			<a href="#team">team</a>
 			<a href="#contactus">contact us</a>
-			<div id="underline-bar-nav"></div>
+			<div id="underline-bar-nav-mobile"></div>
 		</div>
 	</div>
 	<main>
 		<div class="mwc">
 			<div class="cont" id="hero-cont">
+				<div class="nav-link-select-helper" id="nlsh-hero"></div>
 				<div class="text">
 					<h1 class="title">Welcome to Sift!</h1>
 					<h2 class="subtitle">
@@ -934,7 +935,8 @@
 					</svg>
 				</div>
 			</div>
-			<div id="about" class="cont">
+			<div id="about-cont" class="cont">
+				<div class="nav-link-select-helper" id="nlsh-about"></div>
 				<div id="intro">
 					<div class="image">
 						<svg width="313" height="466" viewBox="0 0 313 466" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -1279,7 +1281,8 @@
 					</div>
 				</div>
 			</div>
-			<div id="features" class="cont">
+			<div id="features-cont" class="cont">
+				<div class="nav-link-select-helper" id="nlsh-features"></div>
 				<div class="title">Features</div>
 				<div class="text">
 					Sift is an educational waste management mobile application that helps users make informed recycling decisions
@@ -1463,7 +1466,8 @@
 			</div>
 		</div>
 	</main>
-	<div id="team">
+	<div id="team-cont">
+		<div class="nav-link-select-helper" id="nlsh-team"></div>
 		<div class="title">Meet The Team</div>
 		<div class="sub-title">Meet the incredible team behind this project with amazing skills and knowledge.</div>
 		<div class="content">
@@ -1657,7 +1661,8 @@
 			<iframe width="420" height="345" src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
 		</div>
 	</div>
-	<div id="contactus">
+	<div id="contactus-cont">
+		<div class="nav-link-select-helper" id="nlsh-contactus"></div>
 		<div class="mobile-titles">
 			<div class="title">Contact Us</div>
 			<div class="sub-title">Proudly Developed in Vancouver, BC, Canada.</div>
@@ -1699,10 +1704,6 @@
 		window.addEventListener('DOMContentLoaded', (e) => {
 			document.querySelector('#loader-foreground').style.opacity = 0;
 		})
-
-		const toggleMobileMenu = () => {
-			document.querySelector('#header-mobile .menu').classList.toggle('active');
-		}
 	</script>
 </body>
 

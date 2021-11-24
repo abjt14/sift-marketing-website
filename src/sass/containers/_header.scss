@@ -4,6 +4,7 @@ header {
 	top: 0;
 	background-color: #fff;
 	z-index: 1;
+	transition: transform .3s ease-out;
 
 	.mwc {
 		display: flex;
@@ -47,6 +48,10 @@ header {
 			&.active {
 				font-weight: 900;
 			}
+
+			&.active-2 {
+				font-weight: 900;
+			}
 		}
 
 		#underline-bar-nav {
@@ -57,10 +62,11 @@ header {
 			height: 0.4rem;
 			background-color: #0EC7F3;
 			z-index: 1;
-			display: none;
+			opacity: 0;
+			transition: all .3s ease-out;
 
 			&.active {
-				display: block;
+				opacity: 1;
 			}
 		}
 	}
