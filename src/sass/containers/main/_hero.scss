@@ -47,6 +47,15 @@
 			color: #fff;
 			text-transform: capitalize;
 			margin-bottom: 7rem;
+			transition: background .2s ease;
+
+			&:hover {
+				background: #0188B4;
+			}
+
+			&:active {
+				background: #246BC2;
+			}
 
 			@media screen and (max-width: 600px) {
 				margin-bottom: 2rem;
