@@ -38,6 +38,7 @@
 		@media screen and (max-width: 600px) {
 			display: flex;
 			overflow-x: scroll;
+			gap: 1.52rem;
 		}
 
 		.row {
@@ -124,8 +125,11 @@
 
 			&:nth-of-type(1) {
 				margin-bottom: 1.52rem;
+
+				@media screen and (max-width: 1000px) {
+					margin-bottom: auto;
+				}
 			}
 		}
-		
 	}
 }
