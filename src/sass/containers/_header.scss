@@ -129,10 +129,27 @@ header {
 			color: #134075;
 			text-transform: capitalize;
 			text-decoration: none;
+			position: relative;
+			width: 50vw;
 
 			&.active {
 				font-weight: bold;
 			}
+		}
+
+		a::before {
+			content: " ";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 8px;
+			height: 100%;
+			background: #20c5d4;
+			display: none;
+		}
+
+		a.active::before {
+			display: block;
 		}
 	}
 
