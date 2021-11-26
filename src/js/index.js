@@ -3,6 +3,7 @@ import { customScrollToImplementation } from './custom-scroll-to/customScrollToI
 import { navLinkScrollTrigger } from './nav-link-scroll-trigger/navLinkScrollTrigger'
 import smoothscroll from 'smoothscroll-polyfill'
 import { formInit } from './form/form'
+import { marineAnimation } from './illustration-animation/illustrationAnimation'
 
 // kick off the polyfill!
 smoothscroll.polyfill();
@@ -63,4 +64,12 @@ window.addEventListener('scroll',function(){
 // toggle header menu end
 
 
+// form init
 formInit()
+// form init end
+
+
+
+// main animation init
+marineAnimation();
+// main animation init end
