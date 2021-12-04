@@ -3,10 +3,13 @@ import { customScrollToImplementation } from './custom-scroll-to/customScrollToI
 import { navLinkScrollTrigger } from './nav-link-scroll-trigger/navLinkScrollTrigger'
 import smoothscroll from 'smoothscroll-polyfill'
 import { formInit } from './form/form'
-import { marineAnimation } from './illustration-animation/illustrationAnimation'
+import { mainAnimation } from './illustration-animation/illustrationAnimation'
 
-// kick off the polyfill!
+// smooth scroll polyfill
 smoothscroll.polyfill();
+// smooth scroll polyfill end
+
+
 
 // onclick links
 customScrollToImplementation()
@@ -64,6 +67,7 @@ window.addEventListener('scroll',function(){
 // toggle header menu end
 
 
+
 // form init
 formInit()
 // form init end
@@ -71,5 +75,13 @@ formInit()
 
 
 // main animation init
-marineAnimation();
+mainAnimation();
 // main animation init end
+
+
+
+// proposal download
+document.querySelector('#proposal-download-button').addEventListener('click', (e) => {
+	window.open('./src/assets/pdf/proposal/sift-proposal.pdf', '_blank');
+})
+// proposal download end
