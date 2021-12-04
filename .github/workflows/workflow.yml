@@ -19,4 +19,4 @@ jobs:
 
       - name: Copy files to Sift marketing website with the AWS CLI
         run: |
-          aws s3 sync . s3://siftapp
+          aws s3 sync . s3://www.siftapp.ca
