@@ -68,6 +68,10 @@
 				&:active {
 					background: #246BC2;
 				}
+
+				@media screen and (max-width: 600px) {
+					font-size: 1.65rem;
+				}
 			}
 
 			@media screen and (max-width: 600px) {
