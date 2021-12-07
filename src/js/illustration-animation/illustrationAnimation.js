@@ -306,8 +306,6 @@ const mainAnimation = () => {
 		}
 		// animal end
 	}
-
-	console.clear();
 }
 
 const garbageAnimator = (object) => {
