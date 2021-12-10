@@ -253,6 +253,7 @@
 		background-position: center;
 		display: flex;
     align-items: flex-end;
+		filter: brightness(.9);
 
 		.text {
 			font-weight: bold;
@@ -262,7 +263,7 @@
 			text-align: left;
 			padding: 2.32rem;
 			max-width: 80%;
-			filter: drop-shadow(0px 0px 1px #6b6b6b);
+			filter: drop-shadow(0px 0px 3px #6b6b6b);
 		}
 
 		@media screen and (max-width: 600px) {
